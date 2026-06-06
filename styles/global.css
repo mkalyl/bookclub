@@ -1,0 +1,122 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Pink */
+  --pink-light: #C59DD2;
+  --pink-base:  #9547A5;
+  --pink-dark:  #7D298A;
+  --pink-low:   #3F0F41;
+
+  /* Blue */
+  --blue-light: #73B6D2;
+  --blue-base:  #358BB9;
+  --blue-mid:   #2374A4;
+  --blue-dark:  #144A72;
+  --blue-low:   #08233C;
+
+  /* Shape */
+  --shape-stroke: #002347;
+  --shape-hover:  #001933;
+  --shape-base:   #000F1F;
+  --shape-bg:     #00050A;
+
+  /* Text colors */
+  --text-title: #F8FBFB;
+  --text-body:  #E2E7E9;
+  --text-label: #BAC6C9;
+
+  /* Font family */
+  --ff-base: 'Raleway', sans-serif;
+
+  /* Font sizes */
+  --text-title-lg: 3rem;
+  --text-title-md: 2.5rem;
+  --text-title-sm: 2rem;
+  --text-title-xs: 1rem;
+  --text-subtitle: 2rem;
+  --text-body-lg:  1.25rem;
+  --text-body-md:  1rem;
+  --text-body-sm:  0.875rem;
+  --text-body-xs:  0.75rem;
+  --text-button:   0.875rem;
+  --text-link:     0.875rem;
+  --text-tag:      0.625rem;
+
+  /* Line heights */
+  --lh-title:    1.25;
+  --lh-subtitle: 2;
+  --lh-body:     1.4;
+
+  /* Letter spacing */
+  --ls-tag: 0.05em;
+}
+
+/* Base */
+html {
+  font: 500 var(--text-body-md) / var(--lh-body) var(--ff-base);
+  color: var(--text-body);
+  background-color: var(--shape-bg);
+}
+
+/* Headings */
+h1 {
+  font-size: var(--text-title-lg);
+  font-weight: 700;
+  line-height: var(--lh-title);
+  color: var(--text-title);
+}
+
+h2 {
+  font-size: var(--text-title-md);
+  font-weight: 700;
+  line-height: var(--lh-title);
+  color: var(--text-title);
+}
+
+h3 {
+  font-size: var(--text-title-sm);
+  font-weight: 700;
+  line-height: var(--lh-title);
+  color: var(--text-title);
+}
+
+h4 {
+  font-size: var(--text-title-xs);
+  font-weight: 700;
+  line-height: var(--lh-title);
+  color: var(--text-title);
+}
+
+/* Links */
+a {
+  font-size: var(--text-link);
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons */
+button {
+  font: 700 var(--text-button) / 1.25 var(--ff-base);
+  cursor: pointer;
+}
+
+/* Classes utilitárias */
+.subtitle {
+  font-size: var(--text-subtitle);
+  font-weight: 500;
+  line-height: var(--lh-subtitle);
+  color: var(--text-title);
+}
+
+.tag {
+  font-size: var(--text-tag);
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-tag);
+}
