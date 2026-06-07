@@ -1,0 +1,56 @@
+header {
+  max-width: 100%;
+}
+
+.navbar {
+    max-width: 70rem;
+    width: 100%;
+    margin-inline: auto;
+    padding: 1.25rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & img {
+      width: 14rem;
+      height: auto;
+    }
+  }
+  
+    .btn {
+      width: 5.5rem;
+      height: 2.5rem;
+      padding: 0.65rem 1rem;
+      color: var(--text-title);
+      font: 700 var(--text-button) / 1.25 var(--ff-base);
+      background-color: var(--pink-dark);
+      border-radius: 0.5rem;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    & .btn span {
+    position: relative;
+    z-index: 1;  
+  }
+
+    & .btn::before {
+    content: '';                    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 200%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--pink-base);
+    transition: transform 0.8s ease;
+    z-index: 0;
+    }
+
+      & .btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    } 
