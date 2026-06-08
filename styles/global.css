@@ -59,7 +59,7 @@
 html {
   font: 500 var(--text-body-md) / var(--lh-body) var(--ff-base);
   color: var(--text-body);
-  background-color: var(--shape-bg);
+  background-color: var(--shape-base);
 }
 
 /* Headings */
