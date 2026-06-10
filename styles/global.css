@@ -120,3 +120,12 @@ button {
   text-transform: uppercase;
   letter-spacing: var(--ls-tag);
 }
+
+@keyframes fade-in {
+  from { opacity: -80; }
+  to   { opacity: 1; }
+}
+
+body {
+  animation: fade-in 2s ease-out forwards;
+}
